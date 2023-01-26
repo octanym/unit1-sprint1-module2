@@ -316,8 +316,13 @@ HINT - you may need to study tomorrow's content on arrays
 HINT - try looking up the .includes() method
 */
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(stringy) {
+  const vowels = 'aeiouAEIOU';
+  let count = 0;
+  Array.from(stringy).forEach((l) => {
+    vowels.includes(l) ? (count += 1) : (count += 0);
+  });
+  return count;
 }
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
